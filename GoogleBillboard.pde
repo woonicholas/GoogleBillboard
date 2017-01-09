@@ -10,8 +10,8 @@ public void setup()
 	if(isPrime(dNum) == true)
 	{
 	System.out.println(dNum);
-	}
 	break;
+	}
 	}
 	//System.out.println(isPrime(dNum));
 }  
@@ -23,7 +23,7 @@ public boolean isPrime(double dNum)
 {   
 	if(dNum<=1)
 		return false;
-    for (int i = 2;i<Math.sqrt(dNum);i++)//to be finished later   
+    for (int i = 2;i<=Math.sqrt(dNum);i++)//to be finished later   
     {
     	if(dNum%i==0)
     		return false;
