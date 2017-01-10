@@ -5,7 +5,7 @@ public void setup()
     //String substring(int beginIndex, int endIndex)
     for(int i =2;i<e.length();i++)
     {
-    String digits = e.substring(i,i+11);
+    String digits = e.substring(i,i+10);
 	double dNum = Double.parseDouble(digits);
 	if(isPrime(dNum) == true)
 	{
@@ -21,8 +21,6 @@ public void draw()
 }  
 public boolean isPrime(double dNum)  
 {   
-	if(dNum<=1)
-		return false;
     for (int i = 2;i<=Math.sqrt(dNum);i++)//to be finished later   
     {
     	if(dNum%i==0)
